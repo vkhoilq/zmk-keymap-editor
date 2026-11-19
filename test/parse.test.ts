@@ -2,7 +2,6 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { beforeAll, describe, expect, it } from 'vitest';
-import fs from 'node:fs';
 import { getParser } from '../src/dts/lang';
 import { buildModel, extractFile } from '../src/dts/extract';
 import type { Parser } from 'web-tree-sitter';
