@@ -37,6 +37,9 @@ npm install
 npm run dev      # http://localhost:5173
 ```
 
+Requires Node 22 or newer (the devicetree grammar and the test tooling pull in
+a dependency that uses Node's zstd support).
+
 Then enter:
 
 * **owner / repo / branch** of the repository, for example `vkhoilq/zmk-keyboards` on `main`
