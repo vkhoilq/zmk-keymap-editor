@@ -1,0 +1,36 @@
+{
+  "name": "zmk-keymap-editor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Personal ZMK keymap editor: parses .keymap files with local includes and edits bindings in place.",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit false --emitDeclarationOnly false",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "gen:keycodes": "node scripts/gen-keycodes.mjs",
+    "gen:layouts": "node scripts/gen-layouts.mjs",
+    "fixtures": "node scripts/fixtures.mjs",
+    "pretest": "node scripts/fixtures.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "web-tree-sitter": "^0.27.2",
+    "yaml": "^2.9.1",
+    "zustand": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vitest": "^3.2.7"
+  }
+}
