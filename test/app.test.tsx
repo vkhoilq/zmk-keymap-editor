@@ -1,6 +1,8 @@
 /**
  * Smoke test: the app must render without a loaded keymap and without
  * crashing on the first interaction.
+ *
+ * @vitest-environment jsdom
  */
 import { describe, expect, it } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';

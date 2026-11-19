@@ -9,6 +9,5 @@ export default defineConfig({
   test: {
     environment: 'node',
     include: ['test/**/*.test.ts', 'test/**/*.test.tsx'],
-    environmentMatchGlobs: [['test/app.test.tsx', 'jsdom']],
   },
 });
