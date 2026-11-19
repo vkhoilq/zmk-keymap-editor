@@ -8,6 +8,7 @@ export default defineConfig({
   build: { outDir: 'dist', target: 'es2022' },
   test: {
     environment: 'node',
-    include: ['test/**/*.test.ts'],
+    include: ['test/**/*.test.ts', 'test/**/*.test.tsx'],
+    environmentMatchGlobs: [['test/app.test.tsx', 'jsdom']],
   },
 });
